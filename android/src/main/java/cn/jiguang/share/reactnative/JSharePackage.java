@@ -11,7 +11,10 @@ import java.util.Collections;
 import java.util.List;
 
 public class JSharePackage implements ReactPackage {
-
+    public JSharePackage() {
+        Logger.SHUTDOWNTOAST = true;
+        Logger.SHUTDOWNLOG = true;
+    }
     public JSharePackage(boolean toastFlag, boolean logFlag) {
         Logger.SHUTDOWNTOAST = toastFlag;
         Logger.SHUTDOWNLOG = logFlag;
